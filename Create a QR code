@@ -1,0 +1,7 @@
+import qrcode
+
+a="Here is the QR code you wish for! -By Python CDD club"
+
+img=qrcode.make(a)
+
+img.save('QR.png')
