@@ -1,0 +1,25 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the angular frequency and time values
+w = 1  # Adjust as needed
+t = np.linspace(0, 2*np.pi, 1000)
+
+# Calculate the waveforms
+Y1 = 200 * np.sin(w * t)
+Y2 = 150 * np.sin(w * t + np.pi/4)  # Assume a phase difference of pi/4 (45 degrees)
+
+# Plot the waveforms
+plt.figure(figsize=(10, 6))
+plt.plot(t, Y1, label=r'$Y_1 = 200\sin(wt)$', color='blue')
+plt.plot(t, Y2, label=r'$Y_2 = 150\sin(wt + \phi)$', color='green')
+
+# Add labels and legend
+plt.title('Waveforms Y1 and Y2')
+plt.xlabel('Time (s)')
+plt.ylabel('Amplitude')
+plt.legend()
+
+# Show the plot
+plt.grid(True)
+plt.show()
