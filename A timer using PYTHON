@@ -1,0 +1,14 @@
+import time
+
+input_time=int(input("Enter the time in second you want to start from:"))
+
+if input_time >= 0:
+    print("Your timer starts!")
+elif input_time < 0 :
+    print("Enter the valid data in integer format.")
+else:
+    print("Enter the valid data in integer format.")
+
+for x in range(input_time , 0 , -1):
+    print(x)
+    time.sleep(1)
