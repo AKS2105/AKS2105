@@ -1,0 +1,36 @@
+                             #A simple Calculator
+print("'''CALCULATOR.PY'''")
+
+def Add(x,y):
+   return(x+y)
+def substract(x,y):
+   return(x-y)
+def multiply(x,y):
+   return(x*y)
+def divide(x,y):
+   return(x/y)
+
+print("Please select any operation:")
+print("a.Add")
+print("b.Substract")
+print("c.Multiply")
+print("d.Divide")
+
+z=input("Choose any one(a/b/c/d):")
+i=float(input("Enter the 1st number:"))
+j=float(input("Enter the 2nd number:"))
+
+if z=="a":
+ print(i,"+",j, "=",Add(i,j))
+
+elif z=="b":
+ print(i,"-",j,"=",substract(i,j))
+
+elif z=="c":
+ print(i,"*",j,"=",multiply(i,j))
+
+elif z=="d":
+  print(i,"/",j,"=",divide(i,j))
+
+else:
+   print("Invalid input data", " ,Choose between a/b/c/d ")
